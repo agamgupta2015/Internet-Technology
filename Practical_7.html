@@ -1,0 +1,41 @@
+<html>
+<head>
+	<script src="jquery-3.6.1.js"></script>
+</head>
+<body>
+<h1> PET INFORMATION </h1>
+<div id = "output"> </div>
+<button type="button">Submit </button>
+
+<script>
+	var out = document.getElementById("output");
+	var flag = 1;
+	$('button').click(function(){
+		if(flag == 1){
+			$.ajax({                                             //div
+				url:'file.json',                                 //     PET                                     // p name is jonny class is 456p
+				dataType:'json',
+				type:'Get',
+				aync:false,
+				success:function(data){
+					//console.log("hi");
+					var e = document.createElement('div');
+					$.each(data,function(key,value){
+					e.innerHTML = '<h3>'+key+': </h4>';
+					var p = document.createElement('p')
+					for(var key in value){
+						p.innerHTML += '<h1>'+key+" is " +value[key]+'</h1>';
+				}
+				e.appendChild(p);
+				out.appendChild(e);
+			});
+		}
+		})
+		flag = 0;
+		$('button').hide();
+	}
+	});
+</script>
+
+</body>
+</html>

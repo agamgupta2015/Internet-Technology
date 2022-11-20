@@ -1,0 +1,84 @@
+<html>
+<head>
+	<script src="jquery-3.6.1.js"></script>
+	<script>
+		$(document).ready(function(){
+		 $("button").click(function(){
+			$('button').css({
+				'padding' : '8px',
+				'border-radius' : '20px',
+				'background' : 'chocolate',
+				'margin' : '0px auto',
+				'display' : 'block',
+				'cursor': 'pointer' });
+				
+				$('body').css({'background':'aqua'});
+				
+				$('nav').css({'box-shadow': '0px 2px 8px 0px var(--clr-gray-light)',
+								'background-color': 'white',
+								'text-align': 'left',
+								'position': 'relative',
+								'margin': '2rem',
+								'padding' : '20px',
+								'border-radius' : '10px'});
+								
+				$('.c').css({'box-shadow': '0px 2px 8px 0px var(--clr-gray-light)',
+							'background-color': 'white',
+							'text-align': 'left',
+							'position': 'relative',
+							'margin': '2rem',
+							'padding': '20px',
+							'border-radius': '10px'});
+							
+				$('nav.div').css({'background':'#00e1ff6e','display': '-webkit-box'});
+				$('ul').css({'display': 'flex',
+						'margin-left': '50px',
+						'text-align' : 'center',
+						'margin' : '23px',
+						'position' : 'relative',
+						'left': '700px'});
+						
+				$('li').css({'margin-right': '30px'});
+				
+				$('h3').css({'background':'bisque','padding': '8px', 'cursor': 'pointer'});
+				
+				$('.n').css({'background':'#00e1ff6e','display': '-webkit-box'});
+				
+				$('button').hide();
+				
+				
+			});
+		});
+	</script>
+</head>
+<body>
+	<nav>
+		<div class="n">
+		<h1 style="margin-left: 20px">Course Content</h1>
+			<ul class="l">
+				<li> Home </li>
+				<li> About us </li>
+				<li> Contact us </li>
+			</ul>
+			
+		<div>
+	</nav>
+	<div class="info">
+		<strong> <center> <h1>B.Sc Computer Science<h1> <center></strong>
+	</div>
+	<div class="c">
+		<p> <h3> Name : Agam Gupta </h3> <p> 
+		<p> <h3> B.Sc(H) Computer Science </h3><p> 
+		<p> <h3> Roll No. 5843 </h3><p>
+		<h3> Courses :- </h3>	
+		<ol>
+			<li> <h3> Operating System </h3></li>
+			<li> <h3> Computer Networks </h3></li>
+			<li> <h3>DAV </h3></li>
+		</ol>
+		<p> <h3> Fees : 24370 </h3> </p>	
+			
+	</div>
+	<button> Submit </button>	
+</body>
+</html>

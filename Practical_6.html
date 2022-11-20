@@ -1,0 +1,51 @@
+<html>
+<head>
+	<style>
+		form{
+			border: 44px solid aquamarine;
+			padding: 30px;
+			font-size: 40px;
+		}
+		
+		input,button{
+			width: 30%;
+			height: 5%;
+		}
+		
+	</style>
+</head>
+<body>
+<form>
+	Pet name	: <input type="text" id="1" name="name"/> <br> <br>
+	Pet age 	: <input type="text" id="2" name="age"/> <br> <br>
+	Pet weight  : <input type="text" id="3" name="weight"/> <br> <br>
+	Pet type 	: <input type="text" id="4" name="type"/> <br> <br>
+	<button id="5"> Submit </button>
+</form>
+	<script>
+	document.getElementById("5").addEventListener('click',()=>{
+		//event.preventDefault();
+		//function display(){
+		event.preventDefault();
+		let name1 = document.getElementById("1").value; 
+		let age1 = document.getElementById("2").value; 
+		let weight1 = document.getElementById("3").value; 
+		let type1 = document.getElementById("4").value; 
+		
+		var s={
+			Name:name1,
+			Age:age1,
+			Weight:weight1,
+			Type:type1
+		}
+		console.log(s);
+		var d = JSON.stringify(s); // Convert into String
+		document.write(d);
+		var e = JSON.parse(d);  // Convert into object
+		document.write(e);
+		//}
+	});
+	</script>
+
+</body>
+</html>

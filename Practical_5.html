@@ -1,0 +1,114 @@
+<html>
+<head>
+<style>
+	.bt1:hover{
+		background-color:red;
+	}
+	.bt2:hover{
+		background-color:green;
+	}
+	.bt3:hover{
+		background-color:blue;
+	}
+	.id1{
+		box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+		background-color: goldenrod;
+		text-align: left;
+		position: relative;
+		margin: 2rem;
+		padding: 20px;
+		border-radius: 10px;
+	}
+	.id2{
+		box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+		background-color: bisque;
+		text-align: center;
+		position: relative;
+		margin: 2rem;
+		padding: 20px;
+		border-radius: 10px;
+	}
+	
+</style>
+
+</head>
+<body style = "background-color:burlywood ">
+ <p> <strong> <h1><center>  Pratical : 5 </center></h1> </Strong> </p>
+ <p id="p" class="id1"> 
+			When we started Internshala Trainings in summer 2013, we had the exact same question at <br>
+            the top of our minds too. Who would sign up given there are so many free YouTube videos <br>
+			and tutorials available? However, the response has been beyond expectations and here is <br>
+			why students prefer Internshala Trainings over free resources.</p>
+			
+<div class="id2"style="padding:40px 50px;">
+ <div>
+   <button class="bt1" onclick="red()" style="cursor: pointer;padding: 6px 12px; border-radius: 10px;width:33%;"> Red </button>
+   <button class="bt2" onclick="green()" style="cursor: pointer;padding: 6px 12px;border-radius: 10px;width:33%;"> Green </button>
+   <button class="bt3" onclick="blue()" style="cursor: pointer;padding: 6px 12px; border-radius: 10px;width:33%;"> Blue </button>
+ </div>
+ 
+  <br>
+  
+  <div>
+   <button onclick="size()" style="cursor: pointer;border-radius: 10px; padding: 6px 12px; width:33%;"> 10 </button>
+   <button onclick="size1()" style="cursor: pointer;border-radius: 10px; padding: 6px 12px;width:33%;"> 20 </button>
+   <button onclick="size2()" style="cursor: pointer;border-radius: 10px; padding: 6px 12px; width:33%;"> 30 </button>
+ </div>
+ 
+ <br>
+  
+  <div>
+   <button onclick="a()" style="cursor: pointer;border-radius: 10px; padding: 6px 12px;width:33%;"> Cursive </button>
+   <button onclick="b()" style="cursor: pointer;border-radius: 10px; padding: 6px 12px;width:33%;"> Saif </button>
+   <button onclick="c()" style="cursor: pointer;border-radius: 10px; padding: 6px 12px;width:33%;"> Fantasy </button>
+ </div>
+</div>  
+  <script>
+	function red(){
+		var myElement = document.getElementById("p");
+        myElement.style.color = "red";
+	}
+	
+	function green(){
+		var myElement = document.getElementById("p");
+        myElement.style.color = "green";
+	}
+	
+	function blue(){
+		var myElement = document.getElementById("p");
+        myElement.style.color = "blue";
+	}
+	
+	function size(){
+		var myElement = document.getElementById("p");
+        myElement.style.fontSize = "10px";
+	}
+	
+	function size1(){
+		var myElement = document.getElementById("p");
+        myElement.style.fontSize = "20px";
+	}
+	
+	function size2(){
+		var myElement = document.getElementById("p");
+        myElement.style.fontSize = "30px";
+	}
+    
+	function a(){
+		var myElement = document.getElementById("p");
+        myElement.style.fontFamily = "cursive";
+	}
+	
+	function b(){
+		var myElement = document.getElementById("p");
+        myElement.style.fontFamily = "sans-serif";
+	}
+	
+	function c(){
+		var myElement = document.getElementById("p");
+        myElement.style.fontFamily = "fantasy";
+	}
+  </script>
+  
+</body>
+</html>
